@@ -1,0 +1,6 @@
+2018/6/1 6:41:55,GLORYSCHOLARPC,Information:Get Lock ExceptionTest
+2018/6/1 6:41:55,GLORYSCHOLARPC,Information:************************************
+2018/6/1 6:41:55,GLORYSCHOLARPC,Information:User:,Role:||Method:ExceptionTest||Parameters:[Type:System.String,Value:ExceptionTest]
+
+2018/6/1 6:41:56,GLORYSCHOLARPC,Information:************************************* 
+2018/6/1 6:41:56,GLORYSCHOLARPC,Information:Free Lock ExceptionTest

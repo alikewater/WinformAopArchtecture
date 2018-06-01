@@ -1,0 +1,5 @@
+E:\02DoNetBu\WorkSpace\GyArchitecture\TestBusinessLogic\bin\Debug\TestBusinessLogic.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\TestBusinessLogic\bin\Debug\TestBusinessLogic.pdb
+E:\02DoNetBu\WorkSpace\GyArchitecture\TestBusinessLogic\obj\Debug\TestBusinessLogic.csprojResolveAssemblyReference.cache
+E:\02DoNetBu\WorkSpace\GyArchitecture\TestBusinessLogic\obj\Debug\TestBusinessLogic.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\TestBusinessLogic\obj\Debug\TestBusinessLogic.pdb

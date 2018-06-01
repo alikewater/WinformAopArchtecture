@@ -1,0 +1,9 @@
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\bin\Debug\GS.Unity.Extension.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\bin\Debug\GS.Unity.Extension.pdb
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\bin\Debug\Microsoft.Practices.Unity.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\obj\Debug\GS.Unity.Extension.csprojResolveAssemblyReference.cache
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\obj\Debug\GS.Unity.Extension.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\GS.Unity.Extension\obj\Debug\GS.Unity.Extension.pdb
