@@ -1,5 +1,6 @@
 ﻿using Microsoft.Practices.Unity.InterceptionExtension;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -13,7 +14,7 @@ namespace GS.Entlib.AOPHandler
         {
             StringBuilder sb = new StringBuilder();
             sb.Clear();
-             
+            
             sb.Append("User:" + SessionContextManager.SessionVariable.User.Value + ",");
             sb.Append("Role:" + SessionContextManager.SessionVariable.Role.Value + "||");
             sb.Append("Method:" + input.MethodBase.Name + "||");
@@ -46,17 +47,22 @@ namespace GS.Entlib.AOPHandler
             sb.Append("Result:[");
 
             object res = result.ReturnValue;
-            Type t = res.GetType();
-            
-            sb.Append("Type:" + t.ToString() + ",Value:");
-            if (t.IsPrimitive || t == typeof(string))
-                sb.Append(res==null?"null":res.ToString());
-            else
+            if (res != null)
             {
-                sb.Append(Newtonsoft.Json.JsonConvert.SerializeObject(res));
+                Type t = res.GetType();
+
+                sb.Append("Type:" + t.ToString() + ",Value:");
+                if (t.IsPrimitive || t == typeof(string))
+                    sb.Append(res == null ? "null" : res.ToString());
+                else
+                {
+                    if (t is ICollection)
+                        sb.Append("Size:" + ((IList)res).Count.ToString());
+                    else
+                        sb.Append(Newtonsoft.Json.JsonConvert.SerializeObject(res));
+                }
             }
-
-
+             
             sb.Append("]\n");
 
             return sb.ToString();

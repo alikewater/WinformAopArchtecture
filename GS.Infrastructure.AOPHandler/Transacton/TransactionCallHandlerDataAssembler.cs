@@ -15,7 +15,7 @@ namespace GS.Entlib.AOPHandler
         public ICallHandler Assemble(IBuilderContext context, CallHandlerData objectConfiguration, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
         {
             TransactionCallHandlerData handlerData = objectConfiguration as TransactionCallHandlerData;
-            return new TransactionCallHandler(handlerData.Level,handlerData.Order);
+            return new TransactionCallHandler(handlerData.Order,handlerData.Level,handlerData.Output);
         }
          
     }

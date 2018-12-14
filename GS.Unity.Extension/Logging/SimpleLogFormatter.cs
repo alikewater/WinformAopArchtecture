@@ -31,11 +31,11 @@ namespace GS.Entlib.Extension.Logging
             {
                 //时间，机器，级别，用户信息（TreadLocal），内容
                 s.Write(delimiter);
-                s.Write(log.TimeStamp + ",");
+                s.Write(log.TimeStamp.ToLocalTime() + ",");
                 s.Write(log.MachineName+",");
                 s.Write(log.Severity+":");
                 if(log.ExtendedProperties.Keys.Contains("user"))
-                s.Write(log.ExtendedProperties["user"]+",");
+                    s.Write(log.ExtendedProperties["user"]+",");
                 s.Write(log.Message);
 
                 return s.ToString();

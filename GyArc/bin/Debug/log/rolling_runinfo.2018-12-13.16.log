@@ -1,0 +1,45 @@
+2018/12/13 16:49:34,GLORYSCHOLARPC,Information:Begin Tran LinkTest
+2018/12/13 16:49:34,GLORYSCHOLARPC,Information:************************************
+2018/12/13 16:49:34,GLORYSCHOLARPC,Information:User:,Role:||Method:LinkTest||Parameters:]
+
+2018/12/13 16:49:35,GLORYSCHOLARPC,Information:Result:[Type:System.Collections.Generic.List`1[System.Boolean],Value:[true,false]]
+
+2018/12/13 16:49:35,GLORYSCHOLARPC,Information:总共花费283.0162ms.
+2018/12/13 16:49:35,GLORYSCHOLARPC,Information:************************************* 
+2018/12/13 16:49:35,GLORYSCHOLARPC,Information:Submit Tran LinkTest
+2018/12/13 16:49:40,GLORYSCHOLARPC,Information:Begin Tran LinkTest
+2018/12/13 16:49:40,GLORYSCHOLARPC,Information:************************************
+2018/12/13 16:49:40,GLORYSCHOLARPC,Information:User:,Role:||Method:LinkTest||Parameters:]
+
+2018/12/13 16:49:40,GLORYSCHOLARPC,Information:Result:[Type:System.Collections.Generic.List`1[System.Boolean],Value:[true,false]]
+
+2018/12/13 16:49:40,GLORYSCHOLARPC,Information:总共花费136.0078ms.
+2018/12/13 16:49:40,GLORYSCHOLARPC,Information:************************************* 
+2018/12/13 16:49:40,GLORYSCHOLARPC,Information:Submit Tran LinkTest
+2018/12/13 16:49:45,GLORYSCHOLARPC,Information:Begin Tran LinkTest
+2018/12/13 16:49:45,GLORYSCHOLARPC,Information:************************************
+2018/12/13 16:49:45,GLORYSCHOLARPC,Information:User:,Role:||Method:LinkTest||Parameters:]
+
+2018/12/13 16:49:45,GLORYSCHOLARPC,Information:Result:[Type:System.Collections.Generic.List`1[System.Boolean],Value:[true,false]]
+
+2018/12/13 16:49:45,GLORYSCHOLARPC,Information:总共花费118.0067ms.
+2018/12/13 16:49:45,GLORYSCHOLARPC,Information:************************************* 
+2018/12/13 16:49:45,GLORYSCHOLARPC,Information:Submit Tran LinkTest
+2018/12/13 16:50:29,GLORYSCHOLARPC,Information:Begin Tran LinkTest
+2018/12/13 16:50:29,GLORYSCHOLARPC,Information:************************************
+2018/12/13 16:50:29,GLORYSCHOLARPC,Information:User:,Role:||Method:LinkTest||Parameters:]
+
+2018/12/13 16:50:30,GLORYSCHOLARPC,Information:Result:[Type:System.Collections.Generic.List`1[System.Boolean],Value:[true,false]]
+
+2018/12/13 16:50:30,GLORYSCHOLARPC,Information:总共花费495.0283ms.
+2018/12/13 16:50:30,GLORYSCHOLARPC,Information:************************************* 
+2018/12/13 16:50:30,GLORYSCHOLARPC,Information:Submit Tran LinkTest
+2018/12/13 16:50:34,GLORYSCHOLARPC,Information:Begin Tran LinkTest
+2018/12/13 16:50:34,GLORYSCHOLARPC,Information:************************************
+2018/12/13 16:50:34,GLORYSCHOLARPC,Information:User:,Role:||Method:LinkTest||Parameters:]
+
+2018/12/13 16:50:34,GLORYSCHOLARPC,Information:Result:[Type:System.Collections.Generic.List`1[System.Boolean],Value:[true,false]]
+
+2018/12/13 16:50:34,GLORYSCHOLARPC,Information:总共花费347.0199ms.
+2018/12/13 16:50:34,GLORYSCHOLARPC,Information:************************************* 
+2018/12/13 16:50:34,GLORYSCHOLARPC,Information:Submit Tran LinkTest

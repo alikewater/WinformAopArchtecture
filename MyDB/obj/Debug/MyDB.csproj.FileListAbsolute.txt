@@ -1,0 +1,6 @@
+E:\02DoNetBu\WorkSpace\GyArchitecture\MyDB\bin\Debug\MyDB.dll.config
+E:\02DoNetBu\WorkSpace\GyArchitecture\MyDB\bin\Debug\MyDB.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\MyDB\bin\Debug\MyDB.pdb
+E:\02DoNetBu\WorkSpace\GyArchitecture\MyDB\obj\Debug\MyDB.csprojResolveAssemblyReference.cache
+E:\02DoNetBu\WorkSpace\GyArchitecture\MyDB\obj\Debug\MyDB.dll
+E:\02DoNetBu\WorkSpace\GyArchitecture\MyDB\obj\Debug\MyDB.pdb

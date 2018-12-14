@@ -1,0 +1,128 @@
+****************************************************************
+Timestamp: 2018/12/13 16:00:29
+Message: HandlingInstanceID: 6c0fe81c-e1c5-49d3-9e33-5eb44a2b2d60
+An exception of type 'GS.Entlib.AOPHandler.ExtraDebugInfoException' occurred and was caught.
+--------------------------------------------------------------------------------------------
+12/13/2018 16:00:29
+Type : GS.Entlib.AOPHandler.ExtraDebugInfoException, GS.Entlib.AOPHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Message : [extraInfo:User:,Role:||Method:LinkTest||Parameters:]
+,OriginInfo:未将对象引用设置到对象的实例。]
+Source : GS.Entlib.AOPHandler
+Help link : 
+ExtraDebugInfo : [extraInfo:User:,Role:||Method:LinkTest||Parameters:]
+,OriginInfo:未将对象引用设置到对象的实例。]
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn Invoke(Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Microsoft.Practices.Unity.InterceptionExtension.GetNextHandlerDelegate)
+HResult : -2146233088
+Stack Trace :    在 GS.Entlib.AOPHandler.LockCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\SynLock\LockCallHandler.cs:行号 56
+   在 Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target)
+   在 Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target)
+   在 DynamicModule.ns.Wrapped_IBusiness_1904597f555344bbb495759175b2a457.LinkTest()
+   在 GyArc.Form1.button1_Click(Object sender, EventArgs e) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\Form1.cs:行号 105
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+Additional Info:
+
+MachineName : GLORYSCHOLARPC
+TimeStamp : 2018/12/13 8:00:29
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : GyArc.exe
+ThreadIdentity : 
+WindowsIdentity : GloryScholarPC\Glory-Scholar
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : 未将对象引用设置到对象的实例。
+	Source : GS.Entlib.AOPHandler
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : System.String GenerateOutputLogMsg(Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn)
+	HResult : -2147467261
+	Stack Trace :    在 GS.Entlib.AOPHandler.RuntimeInfoCollector.GenerateOutputLogMsg(IMethodReturn result) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\RuntimeInfoCollector.cs:行号 50
+	   在 GS.Entlib.AOPHandler.LogCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\Logging\LogCallHandler.cs:行号 56
+
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: GLORYSCHOLARPC
+Application Domain: GyArc.exe
+Process Id: 33540
+Process Name: E:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\bin\Debug\GyArc.exe
+Win32 Thread Id: 5512
+Thread Name: 
+Extended Properties: 
+****************************************************************
+****************************************************************
+Timestamp: 2018/12/13 16:00:55
+Message: HandlingInstanceID: 2d1fbbcb-db32-4395-948c-12b1ec4a6eda
+An exception of type 'GS.Entlib.AOPHandler.ExtraDebugInfoException' occurred and was caught.
+--------------------------------------------------------------------------------------------
+12/13/2018 16:00:55
+Type : GS.Entlib.AOPHandler.ExtraDebugInfoException, GS.Entlib.AOPHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Message : [extraInfo:User:,Role:||Method:LinkTest||Parameters:]
+,OriginInfo:未将对象引用设置到对象的实例。]
+Source : GS.Entlib.AOPHandler
+Help link : 
+ExtraDebugInfo : [extraInfo:User:,Role:||Method:LinkTest||Parameters:]
+,OriginInfo:未将对象引用设置到对象的实例。]
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn Invoke(Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Microsoft.Practices.Unity.InterceptionExtension.GetNextHandlerDelegate)
+HResult : -2146233088
+Stack Trace :    在 GS.Entlib.AOPHandler.LockCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\SynLock\LockCallHandler.cs:行号 56
+   在 Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target)
+   在 Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target)
+   在 DynamicModule.ns.Wrapped_IBusiness_b02e9564985e4624aa9d484ec0461775.LinkTest()
+   在 GyArc.Form1.button1_Click(Object sender, EventArgs e) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\Form1.cs:行号 105
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+Additional Info:
+
+MachineName : GLORYSCHOLARPC
+TimeStamp : 2018/12/13 8:00:55
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : GyArc.exe
+ThreadIdentity : 
+WindowsIdentity : GloryScholarPC\Glory-Scholar
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : 未将对象引用设置到对象的实例。
+	Source : GS.Entlib.AOPHandler
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : System.String GenerateOutputLogMsg(Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn)
+	HResult : -2147467261
+	Stack Trace :    在 GS.Entlib.AOPHandler.RuntimeInfoCollector.GenerateOutputLogMsg(IMethodReturn result) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\RuntimeInfoCollector.cs:行号 50
+	   在 GS.Entlib.AOPHandler.LogCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\Logging\LogCallHandler.cs:行号 56
+
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: GLORYSCHOLARPC
+Application Domain: GyArc.exe
+Process Id: 30872
+Process Name: E:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\bin\Debug\GyArc.exe
+Win32 Thread Id: 33096
+Thread Name: 
+Extended Properties: 
+****************************************************************

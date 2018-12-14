@@ -34,6 +34,7 @@
             this.btnFormatter = new System.Windows.Forms.Button();
             this.btnAOP = new System.Windows.Forms.Button();
             this.btnLock = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnUI
@@ -96,12 +97,23 @@
             this.btnLock.UseVisualStyleBackColor = true;
             this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(26, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "数据库连接测试";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 273);
             this.Controls.Add(this.btnLock);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAOP);
             this.Controls.Add(this.btnFormatter);
             this.Controls.Add(this.btnLog);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Button btnFormatter;
         private System.Windows.Forms.Button btnAOP;
         private System.Windows.Forms.Button btnLock;
+        private System.Windows.Forms.Button button1;
     }
 }
 

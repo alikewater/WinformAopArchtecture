@@ -44,6 +44,7 @@ namespace GS.Entlib.AOPHandler
         public IMethodReturn Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
         {
             string msg = string.Empty;
+            DateTime beforDT = System.DateTime.Now;
             try
             {
                 Logger.Write(Header, "General", 1);
@@ -70,6 +71,9 @@ namespace GS.Entlib.AOPHandler
             }
             finally
             {
+                DateTime afterDT = System.DateTime.Now;
+                TimeSpan ts = afterDT.Subtract(beforDT);
+                Logger.Write(string.Format("总共花费{0}ms.", ts.TotalMilliseconds)  , "General", 1);
                 Logger.Write(Footer, "General", 1);
             }
             

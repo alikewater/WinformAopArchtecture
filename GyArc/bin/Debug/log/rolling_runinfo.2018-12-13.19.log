@@ -1,0 +1,9 @@
+2018/12/13 16:55:36,GLORYSCHOLARPC,Information:Begin Tran LinkTest
+2018/12/13 16:55:36,GLORYSCHOLARPC,Information:************************************
+2018/12/13 16:55:36,GLORYSCHOLARPC,Information:User:,Role:||Method:LinkTest||Parameters:]
+
+2018/12/13 16:55:36,GLORYSCHOLARPC,Information:Result:[Type:System.Collections.Generic.List`1[System.Boolean],Value:[true,true]]
+
+2018/12/13 16:55:36,GLORYSCHOLARPC,Information:总共花费336.0192ms.
+2018/12/13 16:55:36,GLORYSCHOLARPC,Information:************************************* 
+2018/12/13 16:55:36,GLORYSCHOLARPC,Information:Submit Tran LinkTest

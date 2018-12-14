@@ -17,10 +17,13 @@ namespace GS.Entlib.AOPHandler
     {
         public System.Transactions.IsolationLevel Level { get; private set; }
 
-        public TransactionCallHandler(System.Transactions.IsolationLevel level, int order)
+        public bool Output { get; private set; }
+
+        public TransactionCallHandler(int order,int level,bool output/**/ )
         {
-            this.Level = level;
+            this.Level = (IsolationLevel)level;// level;
             this.Order = order;
+            this.Output = output;
         }
 
         /// <summary>
@@ -31,8 +34,10 @@ namespace GS.Entlib.AOPHandler
         {
             //从配置文件中获取key，如不存在则指定默认key
             this.Order = String.IsNullOrEmpty(attributes["Order"]) ? 1 : int.Parse(attributes["Order"].ToString());
-            this.Level = string.IsNullOrEmpty(attributes["TransLevel"]) ? IsolationLevel.ReadCommitted :
-                (IsolationLevel)Enum.Parse(typeof(IsolationLevel), attributes["TransLevel"].ToString());
+            this.Level = string.IsNullOrEmpty(attributes["Level"]) ? IsolationLevel.RepeatableRead :
+                (IsolationLevel)Enum.Parse(typeof(IsolationLevel), attributes["Level"].ToString());
+
+            this.Output = String.IsNullOrEmpty(attributes["Output"]) ? true : bool.Parse(attributes["Output"].ToString());
         }
         public IMethodReturn Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
         {
@@ -44,15 +49,19 @@ namespace GS.Entlib.AOPHandler
             {
                 try
                 {
-                    Logger.Write("Begin Tran " + input.MethodBase.Name, "Genaral", 1);
+
+                    if (Output)
+                        Logger.Write("Begin Tran " + input.MethodBase.Name, "General", 1);
+
                     var result = getNext()(input, getNext);
                     ts.Complete();
-                    Logger.Write("Submit Tran" + input.MethodBase.Name, "Genaral", 1);
+                    
                     return result;
                 }
                 catch (Exception ex)
                 {
-                    if(!(ex is ConfigurationErrorsException) && !(ex is ExtraDebugInfoException))
+
+                    if (!(ex is ConfigurationErrorsException) && !(ex is ExtraDebugInfoException))
                     {
                         string msg = RuntimeInfoCollector.GenerateInputLogMsg(input);
                         ExtraDebugInfoException extraEx = new ExtraDebugInfoException(
@@ -61,6 +70,11 @@ namespace GS.Entlib.AOPHandler
                     }
                     else
                         throw ex;
+                }
+                finally
+                {
+                    if(Output)
+                        Logger.Write("Submit Tran " + input.MethodBase.Name, "General", 1);
                 }
                 
             }

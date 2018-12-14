@@ -19,11 +19,29 @@ namespace GS.Entlib.AOPHandler
             set { base["order"] = value; }
         }
 
-        [ConfigurationProperty("level", DefaultValue = (int)IsolationLevel.Unspecified)]
-        public System.Transactions.IsolationLevel Level
+        //public enum IsolationLevel
+        //{
+        //    Serializable,
+        //    RepeatableRead,
+        //    ReadCommitted,
+        //    ReadUncommitted,
+        //    Snapshot,
+        //    Chaos,
+        //    Unspecified
+        //}
+        [ConfigurationProperty("level", DefaultValue = 1,IsRequired=false)]
+        public int Level
         {
-            get { return (IsolationLevel)base["order"]; }
-            set { base["order"] = value;  }
+            get { return (int)base["level"]; }
+            set { base["level"] = value; }
+
+        }
+
+        [ConfigurationProperty("output", DefaultValue = true, IsRequired = false)]
+        public bool Output
+        {
+            get { return (bool)base["output"]; }
+            set { base["output"] = value; }
 
         }
     }

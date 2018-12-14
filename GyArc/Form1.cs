@@ -100,6 +100,13 @@ namespace GyArc
             b.Insert(obj);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string res = string.Join( "|",b.LinkTest()); 
+
+            MessageBox.Show(res);
+        }
+
         
     }
 }

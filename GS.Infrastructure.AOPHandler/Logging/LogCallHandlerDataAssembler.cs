@@ -12,7 +12,8 @@ namespace GS.Entlib.AOPHandler
 {
     public class LogCallHandlerDataAssembler: IAssembler<ICallHandler, CallHandlerData>
     {
-        public ICallHandler Assemble(IBuilderContext context, CallHandlerData objectConfiguration, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+        public ICallHandler Assemble(IBuilderContext context, CallHandlerData objectConfiguration, 
+            IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
         {
             LogCallHandlerData handlerData = objectConfiguration as LogCallHandlerData;
             return new LogCallHandler( handlerData.Order ,handlerData.Header,  handlerData.Footer );

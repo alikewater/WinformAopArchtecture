@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.SessionContextManager", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBusinessLogic", "TestBusinessLogic\TestBusinessLogic.csproj", "{9EE783B0-F3CC-4CA2-A60D-FD30BC666361}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDB", "MyDB\MyDB.csproj", "{3A0C3CA0-8164-4DB1-A006-77EC1FE91DD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{9EE783B0-F3CC-4CA2-A60D-FD30BC666361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EE783B0-F3CC-4CA2-A60D-FD30BC666361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EE783B0-F3CC-4CA2-A60D-FD30BC666361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0C3CA0-8164-4DB1-A006-77EC1FE91DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0C3CA0-8164-4DB1-A006-77EC1FE91DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0C3CA0-8164-4DB1-A006-77EC1FE91DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0C3CA0-8164-4DB1-A006-77EC1FE91DD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

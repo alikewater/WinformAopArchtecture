@@ -1,24 +1,24 @@
-----------------------------------------
-Timestamp: 2018/6/1 14:41:56
-Message: HandlingInstanceID: 48fc4d4a-b252-4653-b281-b4299c50411b
+****************************************************************
+Timestamp: 2018/12/13 16:03:33
+Message: HandlingInstanceID: a9c27c58-b758-4d77-960b-1ad0b0fc9e97
 An exception of type 'GS.Entlib.AOPHandler.ExtraDebugInfoException' occurred and was caught.
 --------------------------------------------------------------------------------------------
-06/01/2018 14:41:56
+12/13/2018 16:03:33
 Type : GS.Entlib.AOPHandler.ExtraDebugInfoException, GS.Entlib.AOPHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-Message : [extraInfo:User:,Role:||Method:ExceptionTest||Parameters:[Type:System.String,Value:ExceptionTest]
+Message : [extraInfo:User:,Role:||Method:LinkTest||Parameters:]
 ,OriginInfo:未将对象引用设置到对象的实例。]
 Source : GS.Entlib.AOPHandler
 Help link : 
-ExtraDebugInfo : [extraInfo:User:,Role:||Method:ExceptionTest||Parameters:[Type:System.String,Value:ExceptionTest]
+ExtraDebugInfo : [extraInfo:User:,Role:||Method:LinkTest||Parameters:]
 ,OriginInfo:未将对象引用设置到对象的实例。]
 Data : System.Collections.ListDictionaryInternal
 TargetSite : Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn Invoke(Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Microsoft.Practices.Unity.InterceptionExtension.GetNextHandlerDelegate)
 HResult : -2146233088
-Stack Trace :    在 GS.Entlib.AOPHandler.LockCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\SynLock\LockCallHandler.cs:行号 54
-   在 Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target) 位置 e:\Builds\Unity\UnityTemp\Compile\Unity\Unity.Interception\Src\PolicyInjection\Pipeline\HandlerPipeline.cs:行号 78
-   在 Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target) 位置 e:\Builds\Unity\UnityTemp\Compile\Unity\Unity.Interception\Src\InterceptionBehaviors\InterceptionBehaviorPipeline.cs:行号 79
-   在 DynamicModule.ns.Wrapped_IBusiness_ff8685afe14a4d6689bda04364571667.ExceptionTest(String test)
-   在 GyArc.Form1.btnUI_Click(Object sender, EventArgs e) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\Form1.cs:行号 45
+Stack Trace :    在 GS.Entlib.AOPHandler.LockCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\SynLock\LockCallHandler.cs:行号 56
+   在 Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target)
+   在 Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target)
+   在 DynamicModule.ns.Wrapped_IBusiness_b02e9564985e4624aa9d484ec0461775.LinkTest()
+   在 GyArc.Form1.button1_Click(Object sender, EventArgs e) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\Form1.cs:行号 105
    在 System.Windows.Forms.Control.OnClick(EventArgs e)
    在 System.Windows.Forms.Button.OnClick(EventArgs e)
    在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
@@ -31,7 +31,7 @@ Stack Trace :    在 GS.Entlib.AOPHandler.LockCallHandler.Invoke(IMethodInvocati
 Additional Info:
 
 MachineName : GLORYSCHOLARPC
-TimeStamp : 2018/6/1 6:41:56
+TimeStamp : 2018/12/13 8:03:33
 FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
 AppDomainName : GyArc.exe
 ThreadIdentity : 
@@ -45,8 +45,8 @@ WindowsIdentity : GloryScholarPC\Glory-Scholar
 	Data : System.Collections.ListDictionaryInternal
 	TargetSite : System.String GenerateOutputLogMsg(Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn)
 	HResult : -2147467261
-	Stack Trace :    在 GS.Entlib.AOPHandler.RuntimeInfoCollector.GenerateOutputLogMsg(IMethodReturn result) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\RuntimeInfoCollector.cs:行号 49
-	   在 GS.Entlib.AOPHandler.LogCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\Logging\LogCallHandler.cs:行号 55
+	Stack Trace :    在 GS.Entlib.AOPHandler.RuntimeInfoCollector.GenerateOutputLogMsg(IMethodReturn result) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\RuntimeInfoCollector.cs:行号 50
+	   在 GS.Entlib.AOPHandler.LogCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GS.Infrastructure.AOPHandler\Logging\LogCallHandler.cs:行号 56
 
 
 Category: Exception
@@ -56,9 +56,55 @@ Severity: Error
 Title:Enterprise Library Exception Handling
 Machine: GLORYSCHOLARPC
 Application Domain: GyArc.exe
-Process Id: 8216
+Process Id: 30872
 Process Name: E:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\bin\Debug\GyArc.exe
-Win32 Thread Id: 11128
+Win32 Thread Id: 33096
 Thread Name: 
 Extended Properties: 
-----------------------------------------
+****************************************************************
+****************************************************************
+Timestamp: 2018/12/13 16:04:32
+Message: HandlingInstanceID: 5726e56a-6efd-4a6f-a1c5-ebb1f294dd6d
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+12/13/2018 16:04:32
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : 未找到方法“TestBusinessLogic.BusinessObject.LinkTestInner”。
+Source : Unity_ILEmit_InterfaceProxies
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean LinkTest()
+HResult : -2146233070
+Stack Trace :    在 DynamicModule.ns.Wrapped_IBusiness_cbbb94f6684042de8dc0290e9fe6ec34.LinkTest()
+   在 GyArc.Form1.button1_Click(Object sender, EventArgs e) 位置 e:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\Form1.cs:行号 105
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+Additional Info:
+
+MachineName : GLORYSCHOLARPC
+TimeStamp : 2018/12/13 8:04:32
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : GyArc.exe
+ThreadIdentity : 
+WindowsIdentity : GloryScholarPC\Glory-Scholar
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: GLORYSCHOLARPC
+Application Domain: GyArc.exe
+Process Id: 25844
+Process Name: E:\02DoNetBu\WorkSpace\GyArchitecture\GyArc\bin\Debug\GyArc.exe
+Win32 Thread Id: 23884
+Thread Name: 
+Extended Properties: 
+****************************************************************

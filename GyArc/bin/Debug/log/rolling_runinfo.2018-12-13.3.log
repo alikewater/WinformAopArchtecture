@@ -1,0 +1,18 @@
+2018/12/13 16:04:32,GLORYSCHOLARPC,Information:Begin Tran LinkTest
+2018/12/13 16:04:32,GLORYSCHOLARPC,Information:************************************
+2018/12/13 16:04:32,GLORYSCHOLARPC,Information:User:,Role:||Method:LinkTest||Parameters:]
+
+2018/12/13 16:04:32,GLORYSCHOLARPC,Information:Result:[]
+
+2018/12/13 16:04:32,GLORYSCHOLARPC,Information:总共花费9.0005ms.
+2018/12/13 16:04:32,GLORYSCHOLARPC,Information:************************************* 
+2018/12/13 16:04:32,GLORYSCHOLARPC,Information:Submit Tran LinkTest
+2018/12/13 16:05:18,GLORYSCHOLARPC,Information:Begin Tran LinkTest
+2018/12/13 16:05:18,GLORYSCHOLARPC,Information:************************************
+2018/12/13 16:05:18,GLORYSCHOLARPC,Information:User:,Role:||Method:LinkTest||Parameters:]
+
+2018/12/13 16:05:18,GLORYSCHOLARPC,Information:Result:[Type:System.Boolean,Value:True]
+
+2018/12/13 16:05:18,GLORYSCHOLARPC,Information:总共花费125.0071ms.
+2018/12/13 16:05:18,GLORYSCHOLARPC,Information:************************************* 
+2018/12/13 16:05:18,GLORYSCHOLARPC,Information:Submit Tran LinkTest

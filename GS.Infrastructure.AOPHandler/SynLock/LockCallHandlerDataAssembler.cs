@@ -15,7 +15,7 @@ namespace GS.Entlib.AOPHandler
         public ICallHandler Assemble(IBuilderContext context, CallHandlerData objectConfiguration, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
         {
             LockCallHandlerData handlerData = objectConfiguration as LockCallHandlerData;
-            return new LockCallHandler( handlerData.Order);
+            return new LockCallHandler( handlerData.Order,handlerData.Output);
         }
          
     }

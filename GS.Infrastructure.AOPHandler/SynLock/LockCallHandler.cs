@@ -15,9 +15,10 @@ namespace GS.Entlib.AOPHandler
     [ConfigurationElementType(typeof(CustomCallHandlerData))]
     public class LockCallHandler:ICallHandler
     {
-        public LockCallHandler(int order)
+        public LockCallHandler(int order,bool output)
         {
             this.Order = order;
+            this.Output = output;
         }
 
         /// <summary>
@@ -28,7 +29,7 @@ namespace GS.Entlib.AOPHandler
         {
             //从配置文件中获取key，如不存在则指定默认key
             this.Order = String.IsNullOrEmpty(attributes["Order"]) ? 1 : int.Parse(attributes["Order"].ToString());
- 
+            this.Output = String.IsNullOrEmpty(attributes["Output"]) ?true : bool.Parse(attributes["Order"].ToString());
         }
         public IMethodReturn Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
         {
@@ -36,7 +37,8 @@ namespace GS.Entlib.AOPHandler
             try
             {
                 Monitor.Enter(t);
-                Logger.Write("Get Lock " + input.MethodBase.Name, "General", 1);
+                if(this.Output)
+                    Logger.Write("Get Lock " + input.MethodBase.Name, "General", 1);
                 IMethodReturn result = getNext()(input, getNext);
 
                 return result;
@@ -56,13 +58,20 @@ namespace GS.Entlib.AOPHandler
             }
             finally
             {
-                Logger.Write("Free Lock " + input.MethodBase.Name, "General", 1);
+                if (this.Output)
+                    Logger.Write("Free Lock " + input.MethodBase.Name, "General", 1);
                 Monitor.Exit(t);
             }
              
         }
 
         public int Order
+        {
+            get;
+            set;
+        }
+
+        public bool Output
         {
             get;
             set;
